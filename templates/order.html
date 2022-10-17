@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block title %}Заказ №{{ data.id }}{% endblock %}
+
+{% block content %}
+    <div>Товар №{{ data.id }}</div>
+    <img class="img" src="{{ data.img }}"/>
+{% endblock %}
