@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Список кроссовок{% endblock %}
+{% block title %}Список лекарств{% endblock %}
 
 {% block content %}
 <ul>
-    {% for sneaker1 in data.sneakers %}
-       {% include 'qw.html' with elem=sneaker1 %}
+    {% for medicine in data.medicines %}
+       {% include 'qw.html' with elem=medicine %}
     {% empty %}
         <li>Список пуст</li>
     {% endfor %}

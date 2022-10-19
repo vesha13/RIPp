@@ -1,22 +1,9 @@
 
 from django.shortcuts import render
 from datetime import date
-from bmstu_lab.models import Sneakers
-
-def sneakersList(request):
-    return render(request, 'sneakers.html', {'data' : {
-        'current_date': date.today(),
-        'sneakers': Sneakers.objects.all()
-    }})
-
-def GetSneakers(request, id):
-    return render(request, 'sneaker1.html', {'data' : {
-        'current_date': date.today(),
-        'sneaker1': Sneakers.objects.filter(id=id)[0]
-    }})
-
-
-
+from bmstu_lab.models import Medicines
+from bmstu_lab.models import Clients
+from bmstu_lab.models import Charts
 
 def hello(request):
     return render(request, 'index.html', { 'data' : {
@@ -41,3 +28,42 @@ def GetOrder(request, id):
         'img': image[id],
         'id': id
     }})
+
+
+
+def medicineList(request):
+    return render(request, 'medicines.html', {'data' : {
+        'current_date': date.today(),
+        'medicines': Medicines.objects.all()
+    }})
+
+def GetMedicine(request, id):
+    return render(request, 'medicine.html', {'data' : {
+        'current_date': date.today(),
+        'medicine': Medicines.objects.filter(id=id)[0],
+    }})
+
+def clientList(request):
+    return render(request, 'clients.html', {'data' : {
+        'current_date': date.today(),
+        'clients': Clients.objects.all()
+    }})
+
+def GetClient(request, id):
+    return render(request, 'client.html', {'data' : {
+        'current_date': date.today(),
+        'client': Clients.objects.filter(id=id)[0],
+    }})
+
+def chartList(request):
+    return render(request, 'charts.html', {'data' : {
+        'current_date': date.today(),
+        'charts': Charts.objects.all()
+    }})
+
+def GetCharts(request, id):
+    return render(request, 'chart.html', {'data' : {
+        'current_date': date.today(),
+        'chart': Charts.objects.filter(id=id)[0],
+    }})
+

@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block title %}Лекарство №{{ data.medicine.id }}{% endblock %}
+
+{% block content %}
+    <div>Название: {{ data.medicine.name }}</div>
+        <div>Назначение: {{ data.medicine.disease }}</div>
+{% endblock %}

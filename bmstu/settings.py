@@ -124,10 +124,11 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'first_db',
+        'NAME': 'medicines',
         'USER': 'dbuser',
         'PASSWORD': '123',
         'HOST': 'localhost',
@@ -136,4 +137,3 @@ DATABASES = {
         'TEST_CHARSET': 'utf8',
     }
 }
-
