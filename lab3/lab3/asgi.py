@@ -1,5 +1,5 @@
 """
-ASGI config for lab3 project.
+ASGI co nfig for lab3 project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
