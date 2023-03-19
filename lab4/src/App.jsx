@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import List from "./components/List";
+import List from "./components/List.jsx"
 import Medicine from "./components/Medicine";
 import'./App.css'
 import React from "react";
@@ -10,6 +10,7 @@ import Reg from "./components/Reg";
 import Auth from "./components/Auth";
 import Admin from "./components/Admin_List";
 import Orders from "./components/Orders";
+//import List from "./components/List";
 function App() {
 
   return (
